@@ -1,0 +1,110 @@
+[
+    {
+        "transcript": " 2 \u067e\u06cc\u0632\u06c1 \u0622\u0631\u062f\u0631 \u06a9\u0631\u0646\u0627 \u06c1\u06d2",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 2
+    },
+    {
+        "transcript": " 1 bargar",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 1
+    },
+    {
+        "transcript": " 1 burgard order kar naha ek",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 1
+    },
+    {
+        "transcript": " 4 pasta Order",
+        "intent": "place_order",
+        "item": "pasta",
+        "quantity": 4
+    },
+    {
+        "transcript": " 4 Pastha Om is to order",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 4
+    },
+    {
+        "transcript": " tu sandwich order karni hai",
+        "intent": "place_order",
+        "item": "sandwich",
+        "quantity": 1
+    },
+    {
+        "transcript": " 10 Biryani Order",
+        "intent": "place_order",
+        "item": "biryani",
+        "quantity": 10
+    },
+    {
+        "transcript": " Il",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 1
+    },
+    {
+        "transcript": " Sam Order Again",
+        "intent": "reorder",
+        "item": "unknown",
+        "quantity": 1
+    },
+    {
+        "transcript": " previous order.",
+        "intent": "reorder",
+        "item": "unknown",
+        "quantity": 1
+    },
+    {
+        "transcript": " Please order to pasta.",
+        "intent": "place_order",
+        "item": "pasta",
+        "quantity": 1
+    },
+    {
+        "transcript": " Please order to burger.",
+        "intent": "place_order",
+        "item": "burger",
+        "quantity": 1
+    },
+    {
+        "transcript": " please order sat sandwich",
+        "intent": "place_order",
+        "item": "sandwich",
+        "quantity": 1
+    },
+    {
+        "transcript": " Please order 5 sandwiches.",
+        "intent": "place_order",
+        "item": "sandwich",
+        "quantity": 5
+    },
+    {
+        "transcript": " Please order to well T.",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 1
+    },
+    {
+        "transcript": " Please order 12 plate pasta.",
+        "intent": "place_order",
+        "item": "pasta",
+        "quantity": 12
+    },
+    {
+        "transcript": " Please order to",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 1
+    },
+    {
+        "transcript": " Do.. Cake.. Gurak",
+        "intent": "place_order",
+        "item": "unknown",
+        "quantity": 1
+    }
+]

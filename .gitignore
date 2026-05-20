@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+uploads/audio/
+*.pyc
+ffmpeg-8.1.1-essentials_build/

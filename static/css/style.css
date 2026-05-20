@@ -1,0 +1,16 @@
+body{
+    background-color:#f4f4f4;
+}
+
+#recordButton{
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    background-color:red;
+    color:white;
+}
+
+#recordButton:hover{
+    background-color:darkred;
+}
