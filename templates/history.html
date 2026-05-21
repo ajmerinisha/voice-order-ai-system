@@ -1,9 +1,52 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html>
 
-{% block content %}
+<head>
 
-<h2>Order History</h2>
+    <title>Order History</title>
 
-<div id="history"></div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-{% endblock %}
+</head>
+
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+
+    <h1 class="mb-4">
+        📜 Order History
+    </h1>
+
+    <table class="table table-dark table-bordered">
+
+        <tr>
+            <th>ID</th>
+            <th>Restaurant</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Time</th>
+        </tr>
+
+        {% for order in history_items %}
+
+        <tr>
+            <td>{{ order[0] }}</td>
+            <td>{{ order[1] }}</td>
+            <td>{{ order[2] }}</td>
+            <td>{{ order[3] }}</td>
+            <td>{{ order[4] }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <a href="/" class="btn btn-warning">
+        ⬅ Back
+    </a>
+
+</div>
+
+</body>
+
+</html>

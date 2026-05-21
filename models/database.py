@@ -1,48 +1,43 @@
 import sqlite3
 
-def connect_db():
-
-    conn = sqlite3.connect("database/orders.db")
-
-    return conn
-
-
 def create_tables():
-
-    conn = connect_db()
-
+    conn = sqlite3.connect("database/orders.db")
     cursor = conn.cursor()
 
     # Orders Table
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS orders(
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS orders (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        restaurant TEXT,
         item TEXT,
         quantity INTEGER,
-        restaurant TEXT,
         status TEXT
     )
-    ''')
+    """)
 
-    # Users Table
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS users(
+    # History Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS history (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT,
-        email TEXT,
-        language TEXT
+        restaurant TEXT,
+        item TEXT,
+        quantity INTEGER,
+        order_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
-    ''')
+    """)
 
-    # Voice Sessions Table
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS voice_sessions(
+    # Cart Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS cart (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        transcript TEXT,
-        confidence REAL
+        item TEXT,
+        quantity INTEGER
     )
-    ''')
+    """)
 
     conn.commit()
-
     conn.close()
+
+    print("Tables created successfully!")
+
+create_tables()
