@@ -116,6 +116,21 @@ def clear_cart():
     )
 
 
+# CLEAR HISTORY
+@app.route("/clear-history")
+def clear_history():
+
+    conn = sqlite3.connect("database/orders.db")
+    cursor = conn.cursor()
+
+    cursor.execute("DELETE FROM history")
+
+    conn.commit()
+    conn.close()
+
+    return "Order history cleared successfully!"
+
+
 # REPEAT LAST ORDER
 @app.route("/repeat_order")
 def repeat_order():

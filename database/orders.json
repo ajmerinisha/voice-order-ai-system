@@ -59,10 +59,4 @@
         "item": "pizza",
         "quantity": 2
     },
-    {
-        "transcript": "",
-        "intent": "place_order",
-        "item": "unknown",
-        "quantity": 1
-    }
 ]

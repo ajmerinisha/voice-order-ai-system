@@ -1,54 +1,66 @@
 import re
 
-food_items = [
-    "pizza",
-    "burger",
-    "dosa",
-    "sandwich",
-    "pasta",
-    "coke",
-    "biryani",
-    "momos",
-    "vadapav",
-    "noodles",
-    "fries",
-    "coffee",
-    "tea"
-]
-
 def extract_entities(text):
 
     text = text.lower()
 
-    # Quantity Detection
+    # Default values
     quantity = 1
+    item = "unknown"
+    restaurant = "unknown"
 
-    numbers = re.findall(r'\d+', text)
+    # -------------------------
+    # QUANTITY DETECTION
+    # -------------------------
+    quantity_match = re.search(r'\d+', text)
 
-    if numbers:
-        quantity = int(numbers[0])
+    if quantity_match:
+        quantity = int(quantity_match.group())
 
-    # Food Item Detection
-    item_name = "unknown"
+    # -------------------------
+    # FOOD ITEM DETECTION
+    # -------------------------
+    food_items = [
+        "dosa",
+        "pizza",
+        "burger",
+        "pasta",
+        "sandwich",
+        "idli",
+        "fries"
+    ]
 
-    for item in food_items:
-
-        if item in text:
-            item_name = item
+    for food in food_items:
+        if food in text:
+            item = food
             break
 
-    # Restaurant Detection
-    restaurant = "Not Specified"
+    # -------------------------
+    # RESTAURANT DETECTION
+    # -------------------------
+    restaurants = [
+        "madras cafe",
+        "dominos",
+        "kfc",
+        "subway",
+        "pizza hut"
+    ]
 
-    if "from" in text:
+    for r in restaurants:
+        if r in text:
+            restaurant = r
+            break
 
-        parts = text.split("from")
-
-        if len(parts) > 1:
-            restaurant = parts[1].strip()
+    # -------------------------
+    # DEBUG OUTPUT
+    # -------------------------
+    print("TEXT:", text)
+    print("ITEM:", item)
+    print("QUANTITY:", quantity)
+    print("RESTAURANT:", restaurant)
 
     return {
-        "item": item_name,
+        "item": item,
         "quantity": quantity,
         "restaurant": restaurant
     }
