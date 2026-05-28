@@ -1,62 +1,32 @@
 [
     {
-        "transcript": " 2 \u067e\u06cc\u0632\u06c1 \u0622\u0631\u062f\u0631 \u06a9\u0631\u0646\u0627 \u06c1\u06d2",
-        "intent": "place_order",
+        "quantity": 1,
+        "item": "dosa",
+        "restaurant": "Madras Cafe"
+    },
+    {
+        "quantity": 70,
+        "item": "Unknown",
+        "restaurant": "Unknown"
+    },
+    {
+        "quantity": 70,
+        "item": "Unknown",
+        "restaurant": "Unknown"
+    },
+    {
+        "quantity": 7,
         "item": "pizza",
-        "quantity": 2
+        "restaurant": "Unknown"
     },
     {
-        "transcript": " 2 pizzab\u6e67 2 pizzab\u6e67",
-        "intent": "place_order",
+        "quantity": 7,
         "item": "pizza",
-        "quantity": 2
+        "restaurant": "Unknown"
     },
     {
-        "transcript": " to pasta powder,",
-        "intent": "place_order",
-        "item": "pasta",
-        "quantity": 1
-    },
-    {
-        "transcript": " Five sandwich",
-        "intent": "place_order",
-        "item": "sandwich",
-        "quantity": 1
-    },
-    {
-        "transcript": " It is ordered pizza.",
-        "intent": "place_order",
+        "quantity": 7,
         "item": "pizza",
-        "quantity": 1
-    },
-    {
-        "transcript": " Ciar",
-        "intent": "place_order",
-        "item": "unknown",
-        "quantity": 1
-    },
-    {
-        "transcript": " Please order 4 plate as done.",
-        "intent": "place_order",
-        "item": "unknown",
-        "quantity": 4
-    },
-    {
-        "transcript": " Please order a sore plate doza.",
-        "intent": "place_order",
-        "item": "unknown",
-        "quantity": 1
-    },
-    {
-        "transcript": " Please order to Isa.",
-        "intent": "place_order",
-        "item": "unknown",
-        "quantity": 1
-    },
-    {
-        "transcript": " Please order 2 pizza",
-        "intent": "place_order",
-        "item": "pizza",
-        "quantity": 2
-    },
+        "restaurant": "Unknown"
+    }
 ]

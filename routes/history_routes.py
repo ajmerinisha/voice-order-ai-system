@@ -1,15 +1,37 @@
-from flask import Blueprint, jsonify
-
-from services.order_service import get_all_orders
+from flask import Blueprint, render_template
+import json
+import os
 
 history_bp = Blueprint("history_bp", __name__)
 
 
-@history_bp.route("/history", methods=["GET"])
-def get_history():
+@history_bp.route("/history")
+def history():
 
-    orders = get_all_orders()
+    if not os.path.exists("database/orders.json"):
 
-    return jsonify({
-        "history": orders
-    })
+        with open("database/orders.json", "w") as f:
+            json.dump([], f)
+
+    with open("database/orders.json", "r") as f:
+
+        orders = json.load(f)
+
+    return render_template(
+        "history.html",
+        orders=orders
+    )
+
+
+@history_bp.route("/clear-history")
+def clear_history():
+
+    with open("database/orders.json", "w") as f:
+
+        json.dump([], f)
+
+    return render_template(
+        "history.html",
+        orders=[]
+    )
+
