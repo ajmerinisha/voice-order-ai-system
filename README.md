@@ -179,7 +179,9 @@ http://127.0.0.1:5000
 ## Ajmeri Nisha
 
 🎓 BSc IT Student
+
 💻 AI/ML & Web Development Enthusiast
+
 🚀 Passionate about AI-powered applications
 
 
@@ -191,7 +193,9 @@ http://127.0.0.1:5000
 If you like this project:
 
 ⭐ Star the repository
+
 🍴 Fork the project
+
 📢 Share with others
 
 ---
