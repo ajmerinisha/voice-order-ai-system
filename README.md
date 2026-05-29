@@ -9,12 +9,19 @@ An AI-powered food ordering system that allows users to place restaurant orders 
 ✅ Voice Recognition for food ordering
 
 ✅ Speech-to-Text conversion
+
 ✅ AI/NLP based order processing
+
 ✅ Add items to cart
+
 ✅ Order history tracking
+
 ✅ MySQL database integration
+
 ✅ Flask backend API
+
 ✅ Attractive frontend UI
+
 ✅ Real-time order response
 
 ---
