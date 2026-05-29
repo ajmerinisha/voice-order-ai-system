@@ -82,7 +82,7 @@ voice-order-ai-system/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/voice-order-ai-system.git
+git clone https://github.com/ajmerinisha/voice-order-ai-system.git
 ```
 
 ---
