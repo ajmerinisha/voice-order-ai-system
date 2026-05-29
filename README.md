@@ -174,7 +174,7 @@ http://127.0.0.1:5000
 💻 AI/ML & Web Development Enthusiast
 🚀 Passionate about AI-powered applications
 
-GitHub: [https://github.com/yourusername](https://github.com/ajmerinisha)
+
 
 ---
 
