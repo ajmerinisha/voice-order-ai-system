@@ -7,6 +7,7 @@ An AI-powered food ordering system that allows users to place restaurant orders 
 # 🚀 Features
 
 ✅ Voice Recognition for food ordering
+
 ✅ Speech-to-Text conversion
 ✅ AI/NLP based order processing
 ✅ Add items to cart
