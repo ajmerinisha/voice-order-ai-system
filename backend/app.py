@@ -5,7 +5,11 @@ from ai.intent_detection import detect_intent
 from ai.entity_extraction import extract_entities
 from routes.cart_routes import add_to_cart
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder="../frontend/templates",
+    static_folder="../frontend/static"
+)
 
 
 # HOME PAGE
